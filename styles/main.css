@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+#map {
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#controls {
+    margin: 15px;
+}
+select, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#refreshBtn {
+    background: #007bff;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+#refreshBtn:hover {
+    background: #0056b3;
+}
+#routeBtn {
+    background: #28a745;
+    color: white;
+}
+#routeBtn:hover {
+    background: #1e7e34;
+}
+
+.leaflet-control-geocoder {
+    display: none !important;
+}

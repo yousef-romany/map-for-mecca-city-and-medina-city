@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خريطة المرور والطرق في مكة والمدينة</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <link href="./styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>🚦 خريطة المرور والطرق في مكة والمدينة 🛣️</h2>
+
+    <div id="controls">
+        <select id="startCity">
+            <option value="21.3891,39.8579">مكة المكرمة</option>
+            <option value="24.4709,39.6122">المدينة المنورة</option>
+        </select>
+        <select id="endCity">
+            <option value="24.4709,39.6122">المدينة المنورة</option>
+            <option value="21.3891,39.8579">مكة المكرمة</option>
+        </select>
+        <button id="routeBtn">🚗 عرض المسار</button>
+        <button id="refreshBtn">🔄 تحديث البيانات</button>
+    </div>
+
+    <div id="map"></div>
+
+
+
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
